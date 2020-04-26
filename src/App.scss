@@ -1,0 +1,117 @@
+$primary-color: #53a318;
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  background: #efefef;
+  max-width: 525px;
+  margin: 20px auto;
+  padding: 0 10px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+input{
+  height: 2.4375rem;
+  padding: 0.5rem;
+  border: 1px solid #cacaca;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.76em 1em;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: $primary-color;
+  color: #fefefe;
+  transition: all 0.3s;
+  &:hover{
+    background-color: darken($primary-color, 7);
+  }
+}
+
+.todo-list{
+  list-style: none;
+	margin-left: 0;
+  padding-left: 0;
+  .todo{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 13px 7px 13px 13px;
+    transition: box-shadow 250ms;
+    margin-bottom: 6px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    &:hover{
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+    &__controls{
+      display: inline-flex;
+      flex-grow: 1;
+      justify-content: flex-end;
+      .btn{
+        margin:1px 2px;
+      }
+    }
+
+    .todo-content{
+      text-align: left;
+      flex-basis: 260px;
+      margin-bottom: 7px;
+      &__name{
+        font-weight: 600;
+        font-size: 1.2rem;
+      }
+      &__created-at{
+        font-size: 0.8rem;
+        color: #00000094;
+      }
+    }
+  }
+}
+
+
+
+.app form {
+  display: grid;
+  max-width: 325px;
+  margin: auto;
+  & > * {
+    margin-bottom:2px;
+  }
+}
+
+.recording-controller{
+  margin-bottom: 5px;
+  &__dialog {
+    margin-bottom: 6px;
+  }
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    .btn{
+      margin:2px;
+      flex:1;
+    }
+  }
+
+}
