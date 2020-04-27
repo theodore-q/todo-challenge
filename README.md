@@ -1,6 +1,6 @@
-# True layer Todo app with history
+# TrueLayer Todo app with history
 
-A responsive SPA to do app for True Layer. A working demo can be found here: https://true-layer-todo-list.herokuapp.com/ (the free teir may take a little longer to load)
+A responsive SPA to do app for True Layer. A working demo can be found here: https://true-layer-todo-list.herokuapp.com/ (the free tier may take a little longer to load)
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ yarn install
 
 ### Running the dev server (Quick Start)
 
-Get your development enviroment up and running quickly:
+Get your development environment up and running quickly:
 
 ```
 yarn run start-dev
@@ -49,7 +49,7 @@ yarn run test
 ## Deployment
 
 Whilst not used in the project, this project is compatible with the create-react-app buildpack.
-Configure server to use the create app and depoloy.
+Configure server to use the create app and deploy.
 
 
 ## Potential for improvements
@@ -61,3 +61,4 @@ Configure server to use the create app and depoloy.
 * Add the ability to pause recording.
 * Make name or description optional in each task list.
 * If there is no recording hide the Play recording and Clear recording buttons.
+
