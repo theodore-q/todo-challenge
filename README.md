@@ -56,9 +56,9 @@ Configure server to use the create app and deploy.
 
 * Write the whole thing in typescript for legibility.
 * Add react PropTypes
-* Add icons from font awesome instead of text.
-* Display how long a recording is and when it plays your progress.
-* Add the ability to pause recording.
-* Make name or description optional in each task list.
+* Include icons on some buttons in place of text.
+* Display how long a recording is and your progess when it plays.
+* Add the ability to pause a recording when playing.
+* Make name or description optional in each task.
 * If there is no recording hide the Play recording and Clear recording buttons.
 
